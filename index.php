@@ -219,7 +219,7 @@
         <div class="modal-body">Vali "Logivälja" kui oled valmis lõpetama enda sessiooni.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Tühista</button>
-          <a class="btn btn-primary" href="../../index.php">Logivälja</a>
+          <a class="btn btn-primary" href="../../e_korv/login.html">Logivälja</a>
         </div>
       </div>
     </div>
