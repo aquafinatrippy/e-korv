@@ -51,7 +51,7 @@
       <li class="nav-item active">
         <a id="koostaKorv" class="nav-link">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Koosta Ostukorv</span>
+          <span>Ostukorv</span>
         </a>
       </li>
     </ul>
@@ -140,43 +140,83 @@
         <div class="area2" id="area2">
           <h2>Nimekiri</h2>
           <hr>
-            <form>
-              <input type="text" id="Toode" placeholder="Toode">
-              <td>
-                <label for="number"></label>
-                <select name="number" id="number">
-                  <option>0</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                </select>
-              </td>
-            	<input type="button" class="add-row" value="Lisa toode">
-            </form>
-            <table>
-              <thead>
-                <tr>
-                  <th>Select</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox" name="record"></td>
-                  <td>Peter Parker</td>
-                  <td>peterparker@mail.com</td>
-                </tr>
-              </tbody>
-            </table>
-            <button type="button" class="delete-row">Kustuta sisestus</button>
+            <!--<form>-->
+            <!--  <input type="text" id="Toode" placeholder="Toode">-->
+            <!--  <td>-->
+            <!--    <label for="number"></label>-->
+            <!--    <select name="number" id="number">-->
+            <!--      <option>0</option>-->
+            <!--      <option>1</option>-->
+            <!--      <option>2</option>-->
+            <!--      <option>3</option>-->
+            <!--      <option>4</option>-->
+            <!--      <option>5</option>-->
+            <!--      <option>6</option>-->
+            <!--      <option>7</option>-->
+            <!--      <option>8</option>-->
+            <!--      <option>9</option>-->
+            <!--      <option>10</option>-->
+            <!--    </select>-->
+            <!--  </td>-->
+            <!--	<input type="button" class="add-row" value="Lisa toode">-->
+            <!--</form>-->
+            <!--<table>-->
+            <!--  <thead>-->
+            <!--    <tr>-->
+            <!--      <th>Select</th>-->
+            <!--      <th>Name</th>-->
+            <!--      <th>Email</th>-->
+            <!--    </tr>-->
+            <!--  </thead>-->
+            <!--  <tbody>-->
+            <!--    <tr>-->
+            <!--      <td><input type="checkbox" name="record"></td>-->
+            <!--      <td>Peter Parker</td>-->
+            <!--      <td>peterparker@mail.com</td>-->
+            <!--    </tr>-->
+            <!--  </tbody>-->
+            <!--</table>-->
+            <!--<button type="button" class="delete-row">Kustuta sisestus</button>-->
+            <!-- DataTables Example -->
+            <div class="card mb-2">
+              <div class="card-header">
+              <i class="fas fa-table"></i>>>>Nimekirja nimi siia<<<</div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <input type="text" id="Toode" placeholder="Toode">
+                  <input type="button" class="add-row" value="Lisa toode">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Toode</th>
+                        <th>Kogus</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-footer small text-muted">>>>Millal viimati uuendati kuupäev/kell<<<  </div>
+            </div>
           <hr>
         </div>
       <!-- /.container-fluid -->  
