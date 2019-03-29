@@ -75,6 +75,9 @@ body {
   outline: 0 !important;
 }
 
+.area{
+  display: block;
+}
 .area1{
   display: none;
 }

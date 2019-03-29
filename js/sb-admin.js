@@ -37,12 +37,28 @@
     event.preventDefault();
   });
   
-  //Settings paneel
-  $(document).on('click', '#seaded', function(event) {
+  //esileht paneel
+  $(document).on('click', '#esileht', function(event) {
     if($('#area').css('display') == 'none'){
       $('#area').css('display', 'block');
       //teine peida
       $('#area1').css('display', 'none');
+      //kolmas peida
+      $('#area2').css('display', 'none');
+    }else{
+      $('#area').css('display', 'block');
+      //teine tee nähtavaks
+      $('#area1').css('display', 'none');
+      //kolmas peida
+      $('#area2').css('display', 'none');
+    }
+  });
+  //Settings paneel
+  $(document).on('click', '#seaded', function(event) {
+    if($('#area').css('display') == 'none'){
+      $('#area').css('display', 'none');
+      //teine peida
+      $('#area1').css('display', 'block');
       //kolmas peida
       $('#area2').css('display', 'none');
     }else{
@@ -57,11 +73,11 @@
   //koostaKorv paneel
   $(document).on('click', '#koostaKorv', function(event) {
     if($('#area').css('display') == 'none'){
-      $('#area').css('display', 'block');
+      $('#area').css('display', 'none');
       //teine peida
       $('#area1').css('display', 'none');
       //kolmas peida
-      $('#area2').css('display', 'none');
+      $('#area2').css('display', 'block');
     }else{
       $('#area').css('display', 'none');
       //teine tee nähtavaks
