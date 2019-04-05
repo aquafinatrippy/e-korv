@@ -5,37 +5,13 @@
 <body id="page-top">
   
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    
+    <a href="index.php">
+      <img src="images/logo.png" style="max-width: 220px; max-height: 47.5px" alt="logo">
+    </a>
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
     </button>
-    <a class="navbar-brand mr-1" href="index.html">Tere tulemast E-Korvi</a>
-    
-    <!-- Navbar Search -->
-    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Otsi siit..." aria-label="Search" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-primary" type="button">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-    
-    <!-- Navbar -->
-    <ul class="navbar-nav ml-auto ml-md-0">
-      <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user-circle fa-fw"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <button class="dropdown-item" id="seaded">Seaded</button>
-          <a class="dropdown-item" href="#">Tegevus logi</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logivälja</a>
-        </div>
-      </li>
-    </ul>
   </nav>
   
   <!-- wrapper -->
@@ -45,13 +21,43 @@
     <ul class="sidebar navbar-nav">
       <li class="nav-item active">
       <a id="esileht" class="nav-link">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <i class="fas fa-fw fa-home"></i>
           <span>Esileht</span>
         </a>
       <li class="nav-item active">
         <a id="koostaKorv" class="nav-link">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-shopping-cart"></i>
           <span>Ostukorv</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a id="ajalugu" class="nav-link">
+          <i class="fas fa-history"></i>
+          <span>Ajalugu</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a id="seaded" class="nav-link">
+          <i class="fas fa-user"></i>
+          <span>Profiil</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a id="kontakt" class="nav-link">
+          <i class="fas fa-tty"></i>
+          <span>Kontakt</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a id="kkk" class="nav-link">
+          <i class="fas fa-question"></i>
+          <span>KKK</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a id="logout" class="nav-link" data-toggle="modal" data-target="#logoutModal">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Välju</span>
         </a>
       </li>
     </ul>
@@ -60,29 +66,16 @@
       <div class="container-fluid">
         <!-- Area -->
         <div class="area" id="area">
-          <div class="row">
+          <div class="row content-center">
             <div class="col-sm">
-              <div class="card text-white bg-warning o-hidden h-100">
-                <div class="card-body">
-                  <div class="card-body-icon">
-                    <i class="fas fa-fw fa-list"></i>
-                  </div>
-                  <div class="mr-5">List 1!</div>
-                </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
-                  <span class="float-left">Vaata sisu</span>
-                  <span class="float-right">
-                    <i class="fas fa-angle-right"></i>
-                  </span>
-                </a>
-              </div>
+              <h2 class="subTitle">Tere tulemast ostukorvi</h2>
             </div>
           </div>
         </div>
         
-        <!-- area1 -->
+        <!-- area1 profiil -->
         <div class="area1" id="area1">
-        <h2>Muuda profiili</h2>
+        <h2 class="subTitle">Muuda profiili</h2>
           <hr>
             <div class="row d-flex justify-content-center">
               <!-- edit form column -->
@@ -138,84 +131,116 @@
         
         <!-- area2 -->
         <div class="area2" id="area2">
-          <h2>Nimekiri</h2>
+          <h2 class="subTitle">Ostukorvi koostamine</h2>
           <hr>
-            <!--<form>-->
-            <!--  <input type="text" id="Toode" placeholder="Toode">-->
-            <!--  <td>-->
-            <!--    <label for="number"></label>-->
-            <!--    <select name="number" id="number">-->
-            <!--      <option>0</option>-->
-            <!--      <option>1</option>-->
-            <!--      <option>2</option>-->
-            <!--      <option>3</option>-->
-            <!--      <option>4</option>-->
-            <!--      <option>5</option>-->
-            <!--      <option>6</option>-->
-            <!--      <option>7</option>-->
-            <!--      <option>8</option>-->
-            <!--      <option>9</option>-->
-            <!--      <option>10</option>-->
-            <!--    </select>-->
-            <!--  </td>-->
-            <!--	<input type="button" class="add-row" value="Lisa toode">-->
-            <!--</form>-->
-            <!--<table>-->
-            <!--  <thead>-->
-            <!--    <tr>-->
-            <!--      <th>Select</th>-->
-            <!--      <th>Name</th>-->
-            <!--      <th>Email</th>-->
-            <!--    </tr>-->
-            <!--  </thead>-->
-            <!--  <tbody>-->
-            <!--    <tr>-->
-            <!--      <td><input type="checkbox" name="record"></td>-->
-            <!--      <td>Peter Parker</td>-->
-            <!--      <td>peterparker@mail.com</td>-->
-            <!--    </tr>-->
-            <!--  </tbody>-->
-            <!--</table>-->
-            <!--<button type="button" class="delete-row">Kustuta sisestus</button>-->
-            <!-- DataTables Example -->
             <div class="card mb-2">
               <div class="card-header">
-              <i class="fas fa-table"></i>>>>Nimekirja nimi siia<<<</div>
+              <i class="fas fa-table"></i><input type="text" id="listName" placeholder="Listi nimi..."/>Ostukorvi nimi</div>
               <div class="card-body">
                 <div class="table-responsive">
                   <input type="text" id="Toode" placeholder="Toode">
-                  <input type="button" class="add-row" value="Lisa toode">
+                  <input type="button" id="add-row" value="Lisa toode">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                       <tr>
                         <th>Toode</th>
                         <th>Kogus</th>
-                        <th></th>
                       </tr>
                     </thead>
                     <tfoot>
                       <tr>
                         <th>Name</th>
                         <th>Position</th>
-                        <th></th>
                       </tr>
                     </tfoot>
                     <tbody>
                       <tr>
                         <td>Tiger Nixon</td>
                         <td>System Architect</td>
-                        <td></td>
                       </tr>
                       <tr>
                         <td>Garrett Winters</td>
                         <td>Accountant</td>
-                        <td></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="card-footer small text-muted">>>>Millal viimati uuendati kuupäev/kell<<<  </div>
+            </div>
+          <hr>
+        </div>
+        
+        <!-- area3 ajalugu -->
+        <div class="area3" id="area3">
+          <h2 class="subTitle">Ajalugu</h2>
+          <hr>
+          
+          <hr>
+        </div>
+
+        <!-- area4 Kontakt -->
+        <div class="area4" id="area4">
+          <h2 class="subTitle">Kontakt</h2>
+          <hr>
+            <section class="our-webcoderskull padding-lg">
+              <div class="container">
+                <div class="row heading heading-icon">
+                </div>
+                <ul class="row d-flex justify-content-around">
+                  <li class="col-12 col-md-6 col-lg-3">
+                      <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="http://www.webcoderskull.com/">Alvar</a></h3>
+                        <p>Freelance Web Developer</p>
+                        <ul class="follow-us clearfix">
+                          <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="col-12 col-md-6 col-lg-3">
+                      <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="http://www.webcoderskull.com/img/team1.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="#">Tanel</a></h3>
+                        <p>Freelance Web Developer</p>
+                        <ul class="follow-us clearfix">
+                          <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="col-12 col-md-6 col-lg-3">
+                      <div class="cnt-block equal-hight" style="height: 349px;">
+                        <figure><img src="http://www.webcoderskull.com/img/team3.png" class="img-responsive" alt=""></figure>
+                        <h3><a href="http://www.webcoderskull.com/">Marko </a></h3>
+                        <p>Freelance Web Developer</p>
+                        <ul class="follow-us clearfix">
+                          <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="far fa-envelope" aria-hidden="true"></i></a></li>
+                        </ul>
+                      </div>
+                   </li>
+                </ul>
+              </div>
+            </section>
+          <hr>
+        </div>
+        <!-- area5 KKK -->
+        <div class="area5" id="area5">
+          <h2 class="subTitle">Korduma Kippuvad Küsimused</h2>
+          <hr>
+            <div class="kkkList">  
+              <h4>Kuidas saan teha konto?</h4>
+              <ul>
+                <li>Vali menüüs registreeri.</li>
+              </ul>
+              <h4>Kuidas saan sisse logida oma kontole?</h4>
+              <ul>
+                <li>Vali menüüs või üleval äärel logi sisse.</li>
+              </ul>
             </div>
           <hr>
         </div>
