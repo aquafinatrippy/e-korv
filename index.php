@@ -1,5 +1,7 @@
 <?php
     include_once 'header.php';
+    include_once 'DATA/function.php';
+    
 ?>
 
 <body id="page-top">
