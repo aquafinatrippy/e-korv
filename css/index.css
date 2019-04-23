@@ -1,0 +1,176 @@
+/*Globaalne*/
+body, html{
+    line-height: 25px;
+    margin: 0;
+    padding: 0px;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+a:hover{
+    color: #2A404E;
+}
+
+h1, h2, p{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+span{
+    color: #7D3B3B !important;
+}
+.sectionHeader{
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+.feedback{
+    margin-top: 50px;
+}
+.yellowtext{
+    color: #F0C514;
+}
+.nav-item {
+	font-size:25px;
+}
+.bluetext{
+    color: #2A404E;
+}
+
+/*
+            HEADER
+*/
+
+
+header{
+    color: #ffffff;
+}
+header a{
+    color: #ffffff;
+}
+#pais{
+    background: url('../images/city.png')no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 725px;
+}
+.paiseTekst{
+    text-align: center;
+    margin-top: 15%;
+    
+}
+.nupp{
+    color: #ffffff;
+    background-color: #F0C514;
+    padding: 8px 50px;
+    margin-top: 5%;
+    font-size: 25;
+    margin-bottom: 5%;
+}
+
+/*
+            SECTION
+*/
+.pakumetekstid{
+	font-size:24px;
+}
+.services{
+    margin: 25px 5% 50px 5%;
+}
+.sectiontekst{
+    text-align: center;
+    color:#707070;
+    margin-top: 5%;
+}
+section img{
+    display: block;
+    margin: 0 auto;
+}
+#teenused{
+    
+    position: relative;
+    float: left;
+    
+}
+.tekstPilt{
+    width: 455px;
+    height: 298;
+}
+
+
+/*Meist*/
+.infosection{
+    padding: 2% 0.5%;
+    background-color: #2A404E;
+    box-sizing: border-box;
+}
+.article{
+    color: #F0C514;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.tekst{
+    
+    color: #FFFFFF;
+    text-align: center;
+    margin: 5% 0% 100px 0%;
+}
+/*
+                FOOTER
+*/
+.footer{
+    background-color: #2A404E;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color:white;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    
+}
+
+.text{
+    padding-top: 35px;
+}
+/*
+
+        FEEDBACK
+        
+*/
+.form-control{
+    width: 25em !important;
+    color: #F0C514 !important;
+}
+.form-control::placeholder{
+    color: #F0C514 !important;
+}
+.form-control {
+	border: 0 ;
+	border-radius:0;
+}
+.inputForm{
+      
+    outline: none;
+    border-bottom: 2px solid #2A404E;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: #F0C514;
+    margin-bottom: 10%;
+}
+/*MEDIA*/
+@media only screen and (max-width: 992px) {
+.form-control {
+    width: 15em !important;
+    color: #D1AF27 !important;
+	}
+}
+/*MEDIA*/
+@media only screen and (max-width: 500px) {
+.form-control {
+    width: 10em !important;
+    color: #D1AF27 !important;
+	}
+}

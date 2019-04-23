@@ -1,6 +1,6 @@
 <?php
     include_once 'header.php';
-    // include_once 'DATA/function.php';
+     include_once 'DATA/connection.php';
     
 ?>
 
@@ -70,14 +70,14 @@
         <div class="area" id="area">
           <div class="row content-center">
             <div class="col-sm">
-              <h2 class="subTitle">Tere tulemast ostukorvi</h2>
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Tere tulemast ostukorvi</h2>
             </div>
           </div>
         </div>
         
         <!-- area1 profiil -->
         <div class="area1" id="area1">
-        <h2 class="subTitle">Muuda profiili</h2>
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Muuda profiili</h2>
           <hr>
             <div class="row d-flex justify-content-center">
               <!-- edit form column -->
@@ -133,7 +133,7 @@
         
         <!-- area2 -->
         <div class="area2" id="area2">
-          <h2 class="subTitle">Ostukorvi koostamine</h2>
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Ostukorvi koostamine</h2>
           <hr>
             <div class="card mb-2">
               <div class="card-header">
@@ -174,7 +174,7 @@
         
         <!-- area3 ajalugu -->
         <div class="area3" id="area3">
-          <h2 class="subTitle">Ajalugu</h2>
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Ajalugu</h2>
           <hr>
           
           <hr>
@@ -182,69 +182,12 @@
 
         <!-- area4 Kontakt -->
         <div class="area4" id="area4">
-          <h2 class="subTitle">Kontakt</h2>
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Kirjuta meile</h2>
           <hr>
-            <section class="our-webcoderskull padding-lg">
-              <div class="container">
-                <div class="row heading heading-icon">
-                </div>
-                <ul class="row">
-                  <li class="col-12 col-md-6 col-lg-3">
-                      <div class="cnt-block equal-hight" style="height: 349px;">
-                        <figure><img src="http://www.webcoderskull.com/img/team4.png" class="img-responsive" alt=""></figure>
-                        <h3><a href="#">Alvar</a></h3>
-                        <p>Freelance Web Developer</p>
-                        <ul class="follow-us clearfix">
-                          <li><a href="">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            </a></li>
-                          <li><a href="">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
-                            </a></li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li class="col-12 col-md-6 col-lg-3">
-                      <div class="cnt-block equal-hight" style="height: 349px;">
-                        <figure><img src="http://www.webcoderskull.com/img/team1.png" class="img-responsive" alt=""></figure>
-                        <h3><a href="#">Tanel</a></h3>
-                        <p>Freelance Web Developer</p>
-                        <ul class="follow-us clearfix">
-                          <li><a href="">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li><a href="">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                  </li>
-                  <li class="col-12 col-md-6 col-lg-3">
-                      <div class="cnt-block equal-hight" style="height: 349px;">
-                        <figure><img src="http://www.webcoderskull.com/img/team3.png" class="img-responsive" alt=""></figure>
-                        <h3><a href="#">Marko</a></h3>
-                        <p>Freelance Web Developer</p>
-                        <ul class="follow-us clearfix">
-                          <li><a href="">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                          <li><a href="">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                   </li>
-                </ul>
-              </div>
-            </section>
             <!--Section: Contact v.2-->
             <section class="mb-4 contactv2">
                 <!--Section heading-->
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Kirjuta meile</h2>
+                
                 <!--Section description-->
                 <p class="text-center w-responsive mx-auto mb-5">Kas sul on küsimusi? Kirjuta meile ja vastame sulle võimalusel.</p>
                 <div class="row">
@@ -326,7 +269,7 @@
         </div>
         <!-- area5 KKK -->
         <div class="area5" id="area5">
-          <h2 class="subTitle">Korduma Kippuvad Küsimused</h2>
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Korduma Kippuvad Küsimused</h2>
           <hr>
             <div class="kkkList">  
               <h4>Kuidas saan teha konto?</h4>
@@ -380,7 +323,7 @@
         <div class="modal-body">Vali "Logivälja" kui oled valmis lõpetama enda sessiooni.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Tühista</button>
-          <a class="btn btn-primary" href="../../e_korv/login.html">Logivälja</a>
+          <a class="btn btn-primary" href="e-korv.eu">Logivälja</a>
         </div>
       </div>
     </div>
